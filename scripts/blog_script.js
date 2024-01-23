@@ -3,9 +3,10 @@ console.log(data);
 
 //const blogData = JSON.parse(data[0].posts);
 
-let text = "<div>";
+let text = "<div class='blogParent'>";
 for(let i = 0; i < data.length; i++) {
     let obj = data[i];
+    text += "<div class='blogChild'>"
     text += "<h2>";
     text += obj.title;
     text += "</h2>";
@@ -15,10 +16,7 @@ for(let i = 0; i < data.length; i++) {
     text += "<p>";
     text += obj.content;
     text += "</p>";
-
-    console.log(obj.title);
-    console.log(obj.date);
-    console.log(obj.content);
+    text += "</div>";
 }
 text += "</div>";
     

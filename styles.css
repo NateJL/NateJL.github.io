@@ -25,3 +25,12 @@
   background-color: #04AA6D;
   color: white;
 }
+
+/* Blog post css */
+.blogParent {
+  background-color: #333;
+}
+
+.blogChild {
+  background-color: #04AA6D;
+}
