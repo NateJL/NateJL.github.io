@@ -1,0 +1,12 @@
+{"posts":[
+  { 
+  	"title":"My First Blog Post",
+  	"date":"Tue Jan 23 2024 12:50:59 GMT-0700 (Mountain Standard Time)",
+  	"content":"This is my first blog post on https://natejl.github.io/pages/blog.html"
+  },
+  { 
+  	"title":"My Second Blog Post",
+  	"date":"Tue Jan 23 2024 12:51:59 GMT-0700 (Mountain Standard Time)",
+  	"content":"This is my second blog post on https://natejl.github.io/pages/blog.html"
+  }
+]}
