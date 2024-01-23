@@ -26,6 +26,14 @@
   color: white;
 }
 
+/* Top header css */
+.topHeader {
+  background-color: #333;
+  border: 2px solid red;
+  border-radius: 12px;
+  padding: 5px;
+}
+
 /* Blog post css */
 .blogParent {
   background-color: #333;
