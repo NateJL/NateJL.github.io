@@ -22,16 +22,15 @@
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: #04AA6D;
+  background-color: #568EA3;
   color: white;
 }
 
 /* Top header css */
 .topHeader {
-  background-color: #333;
-  border: 2px solid red;
-  border-radius: 12px;
+  background-color: #568EA3;
   padding: 5px;
+  border-style: solid;
   text-align: center;
 }
 
@@ -43,9 +42,34 @@
 }
 
 .blogChild {
-  background-color: #04AA6D;
+  background-color: #568EA3;
   margin: 25px 25px 25px 25px;
   border: 2px solid red;
   border-radius: 12px;
   padding: 5px;
+}
+
+.experienceParent {
+  background-color: #333;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  border-style: solid;
+}
+
+.experienceChild {
+  background-color: #568EA3;
+  margin: 16px 25px 16px 25px;
+  border: 2px solid black;
+  border-radius: 12px;
+  padding: 5px;
+}
+
+.experienceH1 {
+  padding-bottom: 0px;
+  display: inline;
+}
+
+ul.exp {
+  list-style-type: circle;
+  font-size: 20px;
 }
