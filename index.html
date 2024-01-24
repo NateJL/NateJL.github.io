@@ -23,7 +23,7 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <!-- ================== Icon Bar (Sidebar - hidden on small screens) ================== -->
 <nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
   <!-- Avatar image in top left corner -->
-  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <!--img src="images/IMG_117.jpeg" class="w3-circle" style="width:100%"-->
   <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
     <i class="fa fa-home w3-xxlarge"></i>
     <p>HOME</p>
@@ -61,27 +61,28 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
 <div class="w3-padding-large" id="main">
   <!-- ================== Header/Home ================== -->
   <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nathan Larson.</h1>
-    <i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i>
-    <i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i>
+    <h1 class="w3-jumbo">Nathan Larson</h1>
+    <!--i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i>
+    <i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i><br-->
+    <img src="images/IMG_117.jpeg" class="w3-circle" alt="Nate" style="width:10%">
     <p>Software Developer</p>
     <!--img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"-->
   </header>
 
   <!-- ================== Home Section ================== -->
   <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="home">
-    <h2 class="w3-text-light-grey">Nathan Larson</h2>
+    <h2 class="w3-text-light-grey">About Me</h2>
     <hr style="width:90%" class="w3-opacity">
     <p>
       Born and raised in Rhode Island, I grew up enjoying summers by the water and playing sports such as lacrosse and football. In the winter I enjoy snowboarding around local mountains, as well as planning trips to farther destinations such as Colorado and Canada.
       <br><br>
-      After graduating from my local high school, I moved on to the University of Rhode Island where I received my B.A. in Computer Science as well as a minor in Cyber Security. There I discovered an interest in multidimensional rendering, giving me a strong understanding of the intersection between algorithms, graphics programming, and visual aesthetics. This academic journey gave me the skills to push the boundaries of visual storytelling, using data to paint a virtual story that would otherwise go untold.
+      After graduating high school, I moved on to the University of Rhode Island where I received my B.S. in Computer Science with a minor in Cyber Security. During my studies I developed an interest in multidimensional rendering, giving me a strong understanding of the intersection between algorithms, graphics programming, and visual aesthetics. This academic journey gave me the skills to push the boundaries of visual storytelling, using data to paint a virtual story that would otherwise go untold.
       <br><br>
       During college I found myself deeply immersed in the world of cryptocurrency, my fascination lies in the transformative potential of blockchain technology. From its foundational principles to the intricate web of decentralized applications, my journey involved exploring the untapped possibilities that blockchain brings to various industries. Beyond financial considerations, I am passionate about unraveling the innovative threads that weave a decentralized future, where transparency, security, and efficiency redefine the way we interact with information and systems.
       <br><br>
-      As a seasoned Software Test Engineer, my career has been dedicated to ensuring the precision and reliability of the projects I have worked on.  With a meticulous eye for detail, I have played a pivotal role in guarenteeing the effectiveness and accuracy of software used in critical training scenarios.  My expertise lies in developing and implementing comprehensive testing strategies, collaborating with multidisciplinary teams, and contributing to the enhancement of technologies that play a crucial role in their industry.
+      As a seasoned Software Test Engineer, my career has been dedicated to ensuring both the precision and reliability on all the projects I have worked on.  With a meticulous eye for detail, I have played a pivotal role in guaranteeing the effectiveness and accuracy of software used in critical training scenarios.  My expertise lies in developing and implementing comprehensive testing strategies, collaborating with multidisciplinary teams, and contributing to the enhancement of technologies that play a crucial role in their industry.
       <br><br>
-      After moving on from my contractor role I found myself as a Software Developer in Test, optimizing and enhancing Continuous Intregration/Continuous Deployment (CI/CD) pipelines. I worked on creating robust automated testing frameworks that seamlesslu integrated with development workflows. By leveraging advanced testing methodologies and tools, I have not only ensured the reliability of software releases but also accelerated the delivery pipeline. My dedication revolves around ensuring tht software development is not just a process but a streamlined journey towards excellence.
+      After moving on from my Software Test Engineer role I accepted a position as a Software Developer in Test, my main duties including optimizing and enhancing Continuous Integration/Continuous Deployment (CI/CD) pipelines. I worked on creating robust automated testing frameworks that seamlessly integrated with development workflows. By leveraging advanced testing methodologies and tools, I have not only ensured the reliability of software releases but also accelerated the delivery pipeline. My dedication revolves around ensuring that software development is not just a process but a streamlined journey towards excellence.
     </p>
   </div>
   <!-- ================== End Home Section ================== -->
@@ -199,9 +200,26 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
     <!-- Grid for photos -->
     <div class="w3-row-padding" style="margin:0 -16px">
       <div class="w3-half">
-        <img src="/w3images/wedding.jpg" style="width:100%">
-        <img src="/w3images/rocks.jpg" style="width:100%">
-        <img src="/w3images/sailboat.jpg" style="width:100%">
+        <button onclick="document.getElementById('proj_srp').style.display='block'" class="w3-button w3-grey w3-round-xlarge">
+          <h4>Senior Research Project</h4>
+        </button>
+
+        <div id="proj_srp" class="w3-modal">
+          <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+              <span onclick="document.getElementById('proj_srp').style.display='none'" class="w3-button w3-display-topright"> &times;</span>
+              <h2>Senior Research Project</h2>
+            </header>
+            <div class="w3-container w3-text-black">
+              <p>
+                Maintained & enhanced existing CI/CD Pipeline using Github Actions & Jenkins.
+              </p>
+            </div>
+            <footer class="w3-container w3-black">
+              <p>University of Rhode Island</p>
+            </footer>
+          </div>
+        </div>
       </div>
 
       <div class="w3-half">
