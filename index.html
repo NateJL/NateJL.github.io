@@ -1,32 +1,261 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="styles.css">
+<title>Nathan Larson</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
+.w3-row-padding img {margin-bottom: 12px}
+/* Set the width of the sidebar to 120px */
+.w3-sidebar {width: 120px;background: #222;}
+/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
+#main {margin-left: 120px}
+/* Remove margins from "page content" on small screens */
+@media only screen and (max-width: 600px) {#main {margin-left: 0}}
+</style>
 </head>
-<body>
+<body class="w3-black">
 
-	<div class="topnav">
-  		<a class="active" href="index.html">Home</a>
-  		<a href="pages/blog.html">Blog</a>
-  		<a href="pages/education.html">Education</a>
-  		<a href="pages/experience.html">Experience</a>
-  		<a href="pages/projects.html">Projects</a>
-  		<a href="pages/about.html">Contact Me</a>
-	</div>
+<!-- ================== Icon Bar (Sidebar - hidden on small screens) ================== -->
+<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
+  <!-- Avatar image in top left corner -->
+  <img src="/w3images/avatar_smoke.jpg" style="width:100%">
+  <a href="#home" class="w3-bar-item w3-button w3-padding-large w3-black">
+    <i class="fa fa-home w3-xxlarge"></i>
+    <p>HOME</p>
+  </a>
+  <a href="#education" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-user w3-xxlarge"></i>
+    <p>EDUCATION</p>
+  </a>
+  <a href="#experience" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>EXPERIENCE</p>
+  </a>
+  <a href="#projects" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-eye w3-xxlarge"></i>
+    <p>PROJECTS</p>
+  </a>
+  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
+    <i class="fa fa-envelope w3-xxlarge"></i>
+    <p>CONTACT</p>
+  </a>
+</nav>
 
-	<div class="topheader">
-		<h4 id="datetime"></h4>
-		<h2>Nathan Larson</h2>
-	</div>
-	<center><h3 id="datetime"></h3></center>
-	<h1><center>Nathan Larson</center></h1>
-	<p>My first paragraph.</p>
+<!-- ================== Navbar on small screens (Hidden on medium and large screens) ================== -->
+<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
+  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
+    <a href="#" class="w3-bar-item w3-button" style="width:20% !important">HOME</a>
+    <a href="#education" class="w3-bar-item w3-button" style="width:20% !important">EDUCATION</a>
+    <a href="#experience" class="w3-bar-item w3-button" style="width:20% !important">EXPERIENCE</a>
+    <a href="#projects" class="w3-bar-item w3-button" style="width:20% !important">PROJECTS</a>
+    <a href="#contact" class="w3-bar-item w3-button" style="width:20% !important">CONTACT</a>
+  </div>
+</div>
+
+<!-- Page Content -->
+<div class="w3-padding-large" id="main">
+  <!-- ================== Header/Home ================== -->
+  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
+    <h1 class="w3-jumbo"><span class="w3-hide-small">I'm</span> Nathan Larson.</h1>
+    <i class="fa fa-twitter w3-hover-opacity w3-xxlarge"></i>
+    <i class="fa fa-linkedin w3-hover-opacity w3-xxlarge"></i>
+    <p>Software Developer</p>
+    <!--img src="/w3images/man_smoke.jpg" alt="boy" class="w3-image" width="992" height="1108"-->
+  </header>
+
+  <!-- ================== Home Section ================== -->
+  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="home">
+    <h2 class="w3-text-light-grey">Nathan Larson</h2>
+    <hr style="width:90%" class="w3-opacity">
+    <p>
+      Born and raised in Rhode Island, I grew up enjoying summers by the water and playing sports such as lacrosse and football. In the winter I enjoy snowboarding around local mountains, as well as planning trips to farther destinations such as Colorado and Canada.
+      <br><br>
+      After graduating from my local high school, I moved on to the University of Rhode Island where I received my B.A. in Computer Science as well as a minor in Cyber Security. There I discovered an interest in multidimensional rendering, giving me a strong understanding of the intersection between algorithms, graphics programming, and visual aesthetics. This academic journey gave me the skills to push the boundaries of visual storytelling, using data to paint a virtual story that would otherwise go untold.
+      <br><br>
+      During college I found myself deeply immersed in the world of cryptocurrency, my fascination lies in the transformative potential of blockchain technology. From its foundational principles to the intricate web of decentralized applications, my journey involved exploring the untapped possibilities that blockchain brings to various industries. Beyond financial considerations, I am passionate about unraveling the innovative threads that weave a decentralized future, where transparency, security, and efficiency redefine the way we interact with information and systems.
+      <br><br>
+      As a seasoned Software Test Engineer, my career has been dedicated to ensuring the precision and reliability of the projects I have worked on.  With a meticulous eye for detail, I have played a pivotal role in guarenteeing the effectiveness and accuracy of software used in critical training scenarios.  My expertise lies in developing and implementing comprehensive testing strategies, collaborating with multidisciplinary teams, and contributing to the enhancement of technologies that play a crucial role in their industry.
+      <br><br>
+      After moving on from my contractor role I found myself as a Software Developer in Test, optimizing and enhancing Continuous Intregration/Continuous Deployment (CI/CD) pipelines. I worked on creating robust automated testing frameworks that seamlesslu integrated with development workflows. By leveraging advanced testing methodologies and tools, I have not only ensured the reliability of software releases but also accelerated the delivery pipeline. My dedication revolves around ensuring tht software development is not just a process but a streamlined journey towards excellence.
+    </p>
+  </div>
+  <!-- ================== End Home Section ================== -->
 
 
-	<script type="text/javascript">
-		const d = new Date();
-		document.getElementById("datetime").innerHTML = d;
-	</script>
+  <!-- ================== Education Section ================== -->
+  <div class="w3-padding-64 w3-content" id="education">
+    <h2 class="w3-text-light-grey">Education</h2>
+    <hr style="width:90%" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  </div>
+  <!-- ================== End Projects Section ================== -->
+  
+
+  <!-- ================== Experience Section ================== -->
+  <div class="w3-padding-64 w3-content" id="experience">
+    <h2 class="w3-text-light-grey">Experience</h2>
+    <hr style="width:90%" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <button onclick="document.getElementById('exp_SAIL').style.display='block'" class="w3-button w3-grey w3-round-xlarge">
+          <h4>Software Developer in Test</h4><br>Nov '22 - Apr '23<h5>Secure AI Labs</h5>
+        </button>
+
+        <div id="exp_SAIL" class="w3-modal">
+          <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+              <span onclick="document.getElementById('exp_SAIL').style.display='none'" class="w3-button w3-display-topright"> &times;</span>
+              <h2>Software Developer in Test</h2>
+            </header>
+            <div class="w3-container w3-text-black">
+              <p>
+                Maintained & enhanced existing CI/CD Pipeline using Github Actions & Jenkins.
+              </p>
+              <p>
+                Extensive use of Python’s Pytest library for automating unit and system integration tests before deploying changes to production.
+              </p>
+              <p>
+                Maintained & expanded a private Azure Cloud infrastructure for hosting both production and development environments.
+              </p>
+              <p>
+                Utilized Docker to build, deploy, and test features in production/development.
+              </p>
+            </div>
+            <footer class="w3-container w3-black">
+              <p>Secure AI Labs</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-half">
+        <button onclick="document.getElementById('exp_RDSI').style.display='block'" class="w3-button w3-grey w3-round-xlarge">
+          <h4>Software Test Engineer</h4><br>Dec '20 - Oct '22<h5>Research & Development Solutions, Inc.</h5>
+        </button>
+
+        <div id="exp_RDSI" class="w3-modal">
+          <div class="w3-modal-content w3-animate-zoom w3-card-4">
+            <header class="w3-container w3-black"> 
+              <span onclick="document.getElementById('exp_RDSI').style.display='none'" class="w3-button w3-display-topright"> &times;</span>
+              <h2>Software Test Engineer</h2>
+            </header>
+            <div class="w3-container w3-text-black">
+              <p>
+                Created and executed test cases using a quality control database while following a requirement-based protocol.
+              </p>
+              <p>
+                Documented, coordinated, and implemented corrective actions on local and customer servers.
+              </p>
+              <p>
+                Conducted regression testing to ensure current builds are compatible with previous tests.
+              </p>
+              <p>
+                Monitored and configured system servers and clients.
+              </p>
+              <p>
+                Received a ROPE (Recognition of Performance Excellence) for deep understanding of the software and participation in a customer PAT (Product Acceptance Test) event held at Beale AFB.
+              </p>
+            </div>
+            <footer class="w3-container w3-black">
+              <p>Research & Development Solutions, Inc.</p>
+            </footer>
+          </div>
+        </div>
+      </div>
+    <!-- End photo grid -->
+    </div>
+  </div>
+  <!-- ================== End Experience Section ================== -->
+
+
+  <!-- ================== Projects Section ================== -->
+  <div class="w3-padding-64 w3-content" id="projects">
+    <h2 class="w3-text-light-grey">Projects</h2>
+    <hr style="width:90%" class="w3-opacity">
+
+    <!-- Grid for photos -->
+    <div class="w3-row-padding" style="margin:0 -16px">
+      <div class="w3-half">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/rocks.jpg" style="width:100%">
+        <img src="/w3images/sailboat.jpg" style="width:100%">
+      </div>
+
+      <div class="w3-half">
+        <img src="/w3images/underwater.jpg" style="width:100%">
+        <img src="/w3images/chef.jpg" style="width:100%">
+        <img src="/w3images/wedding.jpg" style="width:100%">
+        <img src="/w3images/p6.jpg" style="width:100%">
+      </div>
+    <!-- End photo grid -->
+    </div>
+  </div>
+  <!-- ================== End Projects Section ================== -->
+
+
+  <!-- ================== Contact Section ================== -->
+  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
+    <h2 class="w3-text-light-grey">Contact Me</h2>
+    <hr style="width:200px" class="w3-opacity">
+
+    <div class="w3-section">
+      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Rhode Island, US</p>
+      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Phone: (xxx) xxx-xxxx</p>
+      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: mail@mail.com</p>
+    </div><br>
+    <p>Send me a message:</p>
+
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-padding-16" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
+          <i class="fa fa-paper-plane"></i> SEND MESSAGE
+        </button>
+      </p>
+    </form>
+  <!-- ================== End Contact Section ================== -->
+  </div>
+  
+
+    <!-- Footer -->
+  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
+    <!--i class="fa fa-facebook-official w3-hover-opacity"></i-->
+    <!--i class="fa fa-instagram w3-hover-opacity"></i-->
+    <!--i class="fa fa-snapchat w3-hover-opacity"></i-->
+    <!--i class="fa fa-pinterest-p w3-hover-opacity"></i-->
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  <!-- End footer -->
+  </footer>
+
+<!-- END PAGE CONTENT -->
+</div>
 
 </body>
 </html>
